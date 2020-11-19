@@ -123,3 +123,5 @@ while 5 < 10:
     usermatch()
     print("***********************************finished loop***********************************")
     time.sleep(1000)
+    
+    #SYNC CHECK
