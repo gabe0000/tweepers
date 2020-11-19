@@ -8,14 +8,12 @@ from pymongo import MongoClient
 
 
 #This lets the program know where my database is and my credentials
-myclient = pymongo.MongoClient(
-    "mongodb+srv://gabe0000:TESSA1@cluster0.gdmvn.mongodb.net")
-
+myclient = 
 #These are my twitter credentials
-consumer_key = "NvOt8eUG0oVwQjmO4XC2ogRyI"
-consumer_secret = "jPmEppKkPgpzmVp4RpPrVO1ibDTL4m7EUncJoMfGEA2Wd2BFO8"
-access_token = "1108557129609347073-1YdBjzMiKwPVFs7Qcir8a335EeDdjA"
-access_token_secret = "4faJ3y7DLHl9OQWyYot1FNTT5BJGKw0szePygVo5h4uog"
+consumer_key = 
+consumer_secret = 
+access_token = 
+access_token_secret = 
 usernames = list()
 
 #More Credentials
