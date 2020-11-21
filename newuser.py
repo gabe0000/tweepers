@@ -114,14 +114,14 @@ def usermatch():
                     except:
                         print("***Could Not Retweet")
 
-        #this executes the add_attempt_1 function that we defined above
+        #this executes the
         add_attempt_1()
 
 
-#texecutes usermatch function defined above which contains add_attempt functionand then run again every 15 minutes as long as the if condition is true
+#tells it to run  and then run again every 15 minutes as long as the if condition is true
 while 5 < 10:
     usermatch()
     print("***********************************finished loop***********************************")
     time.sleep(1000)
     
-    #SYNC CHECK
+    
