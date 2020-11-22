@@ -6,14 +6,15 @@ import pprint
 import pymongo
 from pymongo import MongoClient
 
-
 #This lets the program know where my database is and my credentials
-myclient = 
+myclient = pymongo.MongoClient(
+    "mongodb+srv://gabe0000:TESSA1@cluster0.gdmvn.mongodb.net")
+
 #These are my twitter credentials
-consumer_key = 
-consumer_secret = 
-access_token = 
-access_token_secret = 
+consumer_key = "NvOt8eUG0oVwQjmO4XC2ogRyI"
+consumer_secret = "jPmEppKkPgpzmVp4RpPrVO1ibDTL4m7EUncJoMfGEA2Wd2BFO8"
+access_token = "1108557129609347073-1YdBjzMiKwPVFs7Qcir8a335EeDdjA"
+access_token_secret = "4faJ3y7DLHl9OQWyYot1FNTT5BJGKw0szePygVo5h4uog"
 usernames = list()
 
 #More Credentials
@@ -21,14 +22,15 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 
 #this variable just makes code more readable down the road
-api = tweepy.API(auth)
+##api = tweepy.API(auth)
+api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
+
 
 #These variables to the same, make it more readable
 mydb = myclient["mongotweeps"]
 mycol = mydb["usernames"]
 noDMs = mydb["DM's Blocked"]
 myfollowers = mydb["My Followers"]
-
 ##############Actual "Do Stuff" part of the code starts here
 
 #Just lets user know the program is running
@@ -116,10 +118,9 @@ def usermatch():
         add_attempt_1()
 
 
-#tells it to run  and then run again every 15 minutes as long as the if condition is true
-while 5 < 10:
-    usermatch()
-    print("***********************************finished loop***********************************")
-    time.sleep(1000)
+
+
+usermatch()
+
     
     
