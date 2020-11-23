@@ -4,14 +4,13 @@ import pprint
 import pymongo
 from pymongo import MongoClient
 
-myclient = pymongo.MongoClient(
-    "mongodb+srv://gabe0000:TESSA1@cluster0.gdmvn.mongodb.net")
+myclient = 
 
 #These are my twitter credentials
-consumer_key = "93L6WKJJL9KiMFh4HnZs8NCao"
-consumer_secret = "foNEdaIGQ23NgXkGrCASHvumq4JjelgNHshSuGifxR9vqKUy1q"
-access_token = "968472004885131264-MVbfKWDfZvi6IcN6x78CzUFmUDCbWhn"
-access_token_secret = "bBUcQ727HC5XZrhQRzKDJyPmqtjXfT0eyGTkOINWkPhTl"
+consumer_key = 
+consumer_secret = 
+access_token = 
+access_token_secret = 
 usernames = list()
 
 #More Credentials
