@@ -61,7 +61,7 @@ def users_to_remove():
             black_list.append(i)
             print (i)
             print("is getting black listed.")
-            #api.destroy_friendship(i)
+            api.destroy_friendship(i)
     print("_______________________________________________________")
 
 def fix_errors():
@@ -77,7 +77,7 @@ def fix_errors():
 
 get_friends()
 get_followers()
-#users_to_remove()
+users_to_remove()
 print (len(current_friends))
 print (len(current_followers))
 print (len(black_list))
@@ -86,6 +86,4 @@ print(len(current_friends))
 print(len(current_followers))
 print(len(black_list))
 
-#print(current_followers)
-#print("You have "+len(current_followers)+" followers")
-#print("You have "+ len(current_friends)+ " friends")
+
