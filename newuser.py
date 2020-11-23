@@ -7,8 +7,7 @@ import pymongo
 from pymongo import MongoClient
 
 #This lets the program know where my database is and my credentials
-myclient = pymongo.MongoClient(
-    "mongodb+srv://gabe0000:TESSA1@cluster0.gdmvn.mongodb.net")
+myclient = 
 
 #These are my twitter credentials
 consumer_key = 
